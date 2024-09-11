@@ -63,7 +63,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
     
     // Send data to the backend using fetch (POST request)
     try {
-        const response = await fetch(`http://localhost:3000/submit-form`, {
+        const response = await fetch(`https://grewup-i145r4mbz-rashi-guptas-projects-e4b26903.vercel.app/submit-form`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
