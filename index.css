@@ -825,6 +825,10 @@ img {
   justify-content: center;
   /* background: #000; */
   padding: 4rem;
+
+}
+iframe {
+  overflow: hidden; /* For older browsers */
 }
 .contact_section_form {
   /* height: 400px; */
@@ -833,8 +837,10 @@ img {
   padding: 2rem;
   border-radius: 20px;
   width: 50%;
-  min-width: 300px;
-  max-width: 500px;
+
+  width: 800px;
+  display: flex;
+  justify-content: center;
 }
 .contact_section_form form {
   display: flex;

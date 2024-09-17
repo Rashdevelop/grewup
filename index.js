@@ -83,3 +83,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
         alert('Error submitting the form');
     }
 });
+var section = document.querySelector('.contact_section');
+if (section) {
+    section.classList.remove('follower');
+  }
