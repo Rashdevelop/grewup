@@ -1,3 +1,10 @@
+window.addEventListener('load', function() {
+    document.getElementById('loading-screen').style.display = 'none';
+    document.getElementById('main-content').style.display = 'block';
+});
+
+
+
 
 const follower = document.getElementById('follower');
 let mouseX = 0, mouseY = 0;
