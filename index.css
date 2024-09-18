@@ -29,13 +29,14 @@ body {
 }
 @media screen and (max-width: 380px) {
   .logo{
-    font-size: 50px;
+    font-size: 30px;
 
-  }
+}
  .header__navbar__buttons{
    position: inherit;
    left: 250px;
  }
+
 }
 nav {
   display: block;
@@ -632,7 +633,7 @@ img {
 }
 @media screen and (max-width: 769px) {
   .header__hero__masthead__image__container {
-      width: 80%;
+      width: 130%;
       height: 400px;
   }
 }
