@@ -13,7 +13,7 @@ body {
   position: relative;
   height: 100%;
   overflow-x: hidden !important;
-  background: #212121;
+  background: #010009;
 }
 .logo {
   background: linear-gradient(225deg, rgb(var(--bg-gradient-orange)), rgb(var(--bg-gradient-pink)), rgb(var(--bg-gradient-red)));
@@ -139,6 +139,7 @@ button {
   width: 100%;
   height: 100%;
   margin-bottom: 200px;
+  background: url('./featureImages/Grewup.mp4');
 }
 .header__hero__masthead {
   display: flex;

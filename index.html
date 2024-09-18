@@ -13,9 +13,12 @@
   <body style="visibility: visible;">
      <div id="loading-screen">
       <div class="loader">
-        <video autoplay src="./featureImages/Grewup.mp4" style="width: 1200px; height: 1000px;"></video>
+        <video autoplay muted loop src="./featureImages/Grewup.mp4" style="width: 1200px; height: 1000px;"></video>
       </div> 
   </div> 
+    <video autoplay muted loop style="position: absolute; height: 100vh; width:100%; object-fit: cover;" >
+      <source src="./featureImages/Grewup.mp4" type="video/mp4">
+    </video>
     <div class="follower" id="follower"></div>
     <header class="header">
       <!-- <div class="header__circle1"></div>
@@ -58,7 +61,7 @@
       </nav></div>
      
     </header>
-    <section class="header__hero">
+    <section class="header__hero" >
       <div class="header__hero__masthead">
         <p class="header__hero__masthead__p">
           <span>⚡️</span> Digital Presence is Necessity, Don't let it go so casually!!! <span>🚀</span>
@@ -122,6 +125,7 @@
           />
         </div>
     </section>
+  
     <section class="prebook_section">
       <div class="prebook_section_img_container">
         <img loading="lazy" src="./ezgif.com-gif-maker (36).webp" alt="" class="prebook_section_img_container__img">
