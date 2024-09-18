@@ -28,6 +28,7 @@ body {
   padding: 2px;
 }
 @media screen and (max-width: 380px) {
+
   .logo{
     font-size: 30px;
 
@@ -35,6 +36,9 @@ body {
  .header__navbar__buttons{
    position: inherit;
    left: 250px;
+ }
+ .contact_section_form{
+   width: 20px;
  }
 
 }
