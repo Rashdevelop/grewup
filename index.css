@@ -35,7 +35,7 @@ body {
 }
  .header__navbar__buttons{
    position: inherit;
-   left: 30px;
+   right: 30px;
  }
  .contact_section_form{
    width: 20px;
@@ -935,7 +935,10 @@ footer::before {
   border-radius: 50% 50% 0 0;
   filter: blur(200px);
 }
-
+.footer_img_div {
+  width: 12%;
+ 
+}
 .quickLinksDiv, .policiesDiv {
   color: white;
   font-family: 'poppins';
