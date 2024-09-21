@@ -27,7 +27,7 @@ body {
 
   padding: 2px;
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 400px) {
 
   .logo{
     font-size: 30px;
@@ -1055,8 +1055,12 @@ li {
     gap: 1rem;
   }
   .header__hero__masthead__p{
-   font-size: 13px;
+   font-size: 10px;
    margin-top: 1px;
+  }
+  .policiesDiv{
+    margin-right: 122px;
+    border: 2px solid red;
   }
   .header__hero__masthead__image__container__img{
     width: 12px;
