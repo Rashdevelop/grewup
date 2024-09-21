@@ -1061,6 +1061,19 @@ li {
   .policiesDiv{
     margin-right: 122px;
     border: 2px solid red;
+    display: none;
+  }
+  .footer_img_div img{
+    width: 100%;
+    height: 100%;
+    
+  }
+  #contact{
+   border: 2px solid red;
+  }
+  .contactform{
+    height: 1222px;
+    width: 280px;
   }
   .header__hero__masthead__image__container__img{
     width: 12px;
