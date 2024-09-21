@@ -727,7 +727,7 @@ img {
 }
 @media screen and (max-width: 769px) {
   .header__hero__masthead__image__container__img {
-      width: 80% !important;
+      width: 100% !important;
       height: 80% !important;
       border-radius: 10px;
       overflow: hidden;
@@ -1053,6 +1053,13 @@ li {
     align-items: center;
     margin-top: 33px;
     gap: 1rem;
+  }
+  .header__hero__masthead__p{
+   font-size: 10px;
+   margin-top: 1px;
+  }
+  .header__hero__masthead__image__container__img{
+    width: 12px;
   }
   .header__hero__prebook__bitmoji {
     width: 221px !important;
