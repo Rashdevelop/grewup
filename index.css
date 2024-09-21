@@ -35,7 +35,7 @@ body {
 }
  .header__navbar__buttons{
    position: inherit;
-   left: 250px;
+   right: 30px;
  }
  .contact_section_form{
    width: 20px;
@@ -554,7 +554,7 @@ img {
 }
 @media screen and (max-width: 430px) {
   .feature_section {
-      padding-top: 100px;
+      padding-top: 200px;
   }
 }
 .feature__heading {
@@ -1068,6 +1068,19 @@ li {
     height: 100%;
     
   }
+  .header__hero__about{
+    margin: 27%;
+    border: 2px solid red;
+    width: 100%;
+    font-size: 23px;
+  }
+  .prebook_section_img_container__img{
+    width: 150%;
+    position: relative;
+
+    bottom: 50px;
+  }
+ 
   #contact{
    border: 2px solid red;
   }
