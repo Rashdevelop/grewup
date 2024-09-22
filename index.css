@@ -33,13 +33,13 @@ body {
     font-size: 30px;
 
 }
- .header__navbar__buttons{
-   position: relative;
-   right: 220px;
+ /* .header__navbar__buttons{
+ 
+   right: 190px;
    
- }
+ } */
  .contact_section_form{
-   width: 20px;
+   width: 20vw;
  }
 
 }
@@ -48,7 +48,7 @@ nav {
   unicode-bidi: isolate;
 }
 .header__navbar {
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -101,7 +101,7 @@ img
 }
 .header__navbar__links {
   width: 50%;
-  max-width: 500px;
+  max-width: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -182,7 +182,8 @@ button {
 }
 .header__hero__masthead__image__container {
   width: 30%;
-  max-width: 1000px;
+  max-width: 100%;
+
   height: 100px;
   display: flex;
   justify-content: center;
@@ -245,6 +246,7 @@ button {
 .header__hero__masthead__image__container__bg {
   width: 50%;
   max-width: 800px;
+
   height: 200px;
   background: url('./assets/ezgif.com-gif-maker (29).webp');
   background-repeat: no-repeat;
@@ -302,7 +304,7 @@ button {
   color: white;
   text-align: center;
   font-family: 'Poppins';
-  font-size: clamp(12px, 2vw, 24px);
+  font-size: clamp(19px, 2vw, 24px);
 }
 
 
@@ -580,10 +582,11 @@ img {
 }
 @media screen and (max-width: 769px) {
   .feature__card-wrap {
-      flex-direction: column !important;
+   
       gap: 4rem;
       height: auto;
   }
+ 
 }
 .feature__card {
   display: flex;
@@ -640,6 +643,9 @@ img {
   .header__hero__masthead__image__container {
       width: 130%;
       height: 400px;
+  }
+  .contactform{
+    width: 100%;
   }
 }
 .header__hero__masthead__image__container {
@@ -1061,7 +1067,7 @@ li {
   }
   .policiesDiv{
     margin-right: 122px;
-    border: 2px solid red;
+
     display: none;
   }
   .footer_img_div img{
@@ -1070,20 +1076,20 @@ li {
     
   }
   .header__hero__about{
-    margin: 27%;
-    border: 2px solid red;
+    margin-top: 54%;
+     
     width: 100%;
     font-size: 23px;
   }
   .prebook_section_img_container__img{
-    width: 150%;
+    width: 100%;
     position: relative;
 
     bottom: 50px;
   }
  
   #contact{
-   border: 2px solid red;
+
   }
   .contactform{
     height: 1222px;
@@ -1203,8 +1209,7 @@ li {
 }
 @media screen and (max-width: 568px) {
   .creativity{
-   
-    border: 2px solid red;
+
   }
 }
 @media screen and (max-width: 1025px) {
