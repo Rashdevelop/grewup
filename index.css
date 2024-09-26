@@ -600,7 +600,9 @@ img {
       gap: 4rem;
       height: auto;
   }
- 
+  .feature__card{
+    width: 100px;
+  }
 }
 .feature__card {
   display: flex;
