@@ -1091,9 +1091,7 @@ li {
     height: 100%;
     
   }
-  .header__hero__about{
-    margin-top: -21%;
-     
+  .header__hero__about{ 
     width: 100%;
     font-size: 23px;
   }
