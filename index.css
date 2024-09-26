@@ -15,6 +15,12 @@ body {
   overflow-x: hidden !important;
   background: #010009;
 }
+.homeVideo{
+  position: absolute; 
+  height: 100vh; 
+  width:100%; 
+  object-fit: cover;
+}
 .logo {
   background: linear-gradient(225deg, rgb(var(--bg-gradient-orange)), rgb(var(--bg-gradient-pink)), rgb(var(--bg-gradient-red)));
   -webkit-background-clip: text;
@@ -33,6 +39,8 @@ body {
     font-size: 30px;
 
 }
+
+
  /* .header__navbar__buttons{
  
    right: 190px;
@@ -202,6 +210,12 @@ button {
   position: absolute;
   left: -1%;
   top: 2.5rem;
+}
+.homeVideo{
+  position: absolute; 
+  height: 67vh; 
+  width:100%; 
+  object-fit: cover;
 }
 .tools_hero {
   display: flex;
@@ -1076,11 +1090,12 @@ li {
     
   }
   .header__hero__about{
-    margin-top: 54%;
+    margin-top: -21%;
      
     width: 100%;
     font-size: 23px;
   }
+ 
   .prebook_section_img_container__img{
     width: 100%;
     position: relative;
