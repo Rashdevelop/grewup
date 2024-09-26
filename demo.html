@@ -1,0 +1,1441 @@
+<html lang="en" style="scroll-behavior: smooth;">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myzer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <script src="./gsap-public/minified/gsap.min.js"></script>
+    <script src="./gsap-public/minified/ScrollTrigger.min.js"></script>
+  </head>
+  <body style="visibility: visible;">
+    <div id="loader" style="visibility: visible; display: none;">
+      <div class="spinner">
+        <div class="spinner1"></div>
+      </div>
+    </div>
+
+    <header class="header">
+      <!-- <div class="header__circle1"></div>
+      <div class="header__circle2"></div> -->
+      <div class="pin-spacer" style="order: 0; place-self: auto; grid-area: auto; z-index: 100; float: none; flex-shrink: 1; display: flex; margin: 0px; inset: auto; position: relative; flex-basis: auto; overflow: visible; box-sizing: border-box; width: 943px; height: 71px; padding: 0px;"><nav class="header__navbar" style="translate: none; rotate: none; scale: none; left: 0px; top: 0.001px; margin: 0px; max-width: 943px; width: 943px; max-height: 71px; height: 71px; padding: 0px 32px; box-sizing: border-box; position: fixed; transform: translate(0px, 0px);">
+        <div class="header__navbar__image_container">
+          <img loading="lazy" src="https://res.cloudinary.com/lpmaker/image/upload/v1687417538/logo-_1_v6pwzv.png " alt="logo" class="header__navbar__image_container__img">
+        </div>
+        <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+          <svg width="100%" height="100%" viewBox="0 0 100 100">
+            <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"></path>
+            <path class="line line2" d="M 20,50 H 80"></path>
+            <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"></path>
+          </svg>
+        </button>
+        <div class="header__navbar__links__mobile" style="translate: none; rotate: none; scale: none; transform: translate(100%, 0%);">
+          <div class="mobile__links">
+            <a href="#">Home</a>
+            <a href="#feature">Features</a>
+            <a href="#templates">Templates</a>
+            <a href="./about.html">Pricing</a>
+          </div>
+
+          <div class="header__navbar__buttons__mobile">
+            <button class="header__navbar__button__mobile header__navbar__button--1">
+              Log In
+            </button>
+            <button class="header__navbar__button__mobile header__navbar__button--2">
+              Buy Now
+            </button>
+          </div>
+        </div>
+        <div class="header__navbar__links">
+          <a href="#">Home</a>
+          <a href="#feature">Features</a>
+          <a href="#templates">Templates</a>
+          <a href="./pricing.html">Pricing</a>
+        </div>
+        <div class="header__navbar__buttons">
+          <button class="header__navbar__button header__navbar__button--1">
+            Log In
+          </button>
+          <button class="header__navbar__button header__navbar__button--2">
+            Buy Now
+          </button>
+        </div>
+      </nav></div>
+      <section class="header__hero">
+        <div class="header__hero__masthead">
+          <p class="header__hero__masthead__p">
+            <span>⚡️</span>NO Coding; AI-Powered <span>🤯</span>
+          </p>
+          <h1 class="header__hero__masthead__h1">
+            Launch high converting
+            <span class="heading__1">Landing</span><br>
+            <span class="heading__2">Pages</span> in 7 Minutes!
+            <img loading="lazy" src="https://res.cloudinary.com/lpmaker/image/upload/v1687419114/Line-8_ghuujj.png " alt="" class="h1_line">
+          </h1>
+          <div class="header__hero__masthead__image__container">
+            <div class="header__hero__masthead__image__container__cash">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (31).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+            </div>
+            <div class="header__hero__masthead__image__container__tools">
+              <div class="tool_1 tools_hero">
+                <img loading="lazy" src="./assets/Mask group (1).png" alt="">
+                <p>Templates</p>
+              </div>
+              <div class="tool_2 tools_hero">
+                <img loading="lazy" src="./assets/Mask group (2).png" alt="">
+                <p>Templates</p>
+              </div>
+              <div class="tool_3 tools_hero">
+                <img loading="lazy" src="./assets/Mask group (3).png" alt="">
+                <p>Templates</p>
+              </div>
+            </div>
+            <div class="header__hero__masthead__image__container__card">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (2).webp" alt="">
+            </div>
+            <div class="header__hero__masthead__image__container__bg">
+              <div class="header__hero__masthead__image__container__img">
+                <img loading="lazy" src="./assets/ezgif.com-gif-maker (33).webp" alt="" style="width: 100%; height: 100%; object-fit: cover">
+                <img loading="lazy" src="./assets/Vector.png" alt="" class="play-button">
+                <img loading="lazy" src="https://res.cloudinary.com/lpmaker/image/upload/v1687434239/Mask_group_f4ihqw.png " alt="" class="arrow-line">
+
+                <span class="watchThis">Watch This!</span>
+              </div>
+              <div class="myzer-logo">
+                <img loading="lazy" src="https://res.cloudinary.com/lpmaker/image/upload/v1687419114/logo-_2_oowtcx.png " alt="" style="width: 100%; height: 100%; object-fit: contain">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__hero__about">
+          <p class="header__hero__about__p">
+            Introducing Myzer: The Ultimate AI-Powered Landing Page builder that
+            requires no knowledge of Coding, sales &amp; Marketing or even
+            copywriting to build high converting Landing pages!
+          </p>
+        </div>
+        <div class="header__hero__prebook">
+          <div class="header__hero__prebook__bitmoji">
+            <img loading="lazy" src="https://res.cloudinary.com/lpmaker/image/upload/v1687435494/My_project_8_1_v5jaoz.png " alt="">
+          </div>
+          <div class="header__hero__prebook__details">
+            <button class="specialOffer">Limited Lifetime Offer</button>
+            <h3 class="oneTimeOffer">Subscribe Once; Use Forever</h3>
+            <h2 class="noFees">
+              Become our first 100 Customer and never pay monthly subscription
+              fees
+            </h2>
+            <img loading="lazy" src="./assets/Mask group (4).png" alt="" class="arrow_down">
+            <button class="prebook">
+              Pre-Book your lifetime Membership Now
+            </button>
+          </div>
+        </div>
+        <div class="header__hero__rating">
+          <div class="stars">
+            <img loading="lazy" src="https://res.cloudinary.com/lpmaker/image/upload/v1687435493/Group_48095503_stjwsf.png  " alt="" style="width: 100%; height: 100%; object-fit: contain">
+          </div>
+          <p class="ratingText">
+            4.8 out of 5 (review rating) Over 1,200+ reviews
+          </p>
+        </div>
+      </section>
+    </header>
+
+    <section class="prebook_section">
+      <h1 class="prebook_section_h1">
+        More Lead, Better Conversion &amp; 10x Revenue in just 7 minutes with
+        <span class="gradient-text"> Myzer landing pages! </span>
+      </h1>
+      <div class="prebook_section_img_container">
+        <img loading="lazy" src="./assets/ezgif.com-gif-maker (36).webp" alt="" class="prebook_section_img_container__img">
+        <div class="loop_container1 loop_container">
+          <div class="loop1 loop">
+            <div class="loop__img">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (25).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+            </div>
+            <div class="loop__img">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (26).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+            </div>
+            <div class="loop__img">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (27).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+            </div>
+            <div class="loop__img">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (28).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+            </div>
+            <div class="loop__img">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (25).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+            </div>
+            <div class="loop__img">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (26).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+            </div>
+            <div class="loop__img">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (27).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+            </div>
+            <div class="loop__img">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (28).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+            </div>
+            <div class="loop__img">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (25).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+            </div>
+            <div class="loop__img">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (26).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+            </div>
+            <div class="loop__img">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (27).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+            </div>
+            <div class="loop__img">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (28).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+            </div>
+            <div class="loop__img">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (25).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+            </div>
+            <div class="loop__img">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (26).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+            </div>
+            <div class="loop__img">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (27).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+            </div>
+            <div class="loop__img">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (28).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+            </div>
+          </div>
+        </div>
+        <div class="loop_container2 loop_container">
+          <div class="loop2 loop">
+            <div class="loop__img">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (25).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+            </div>
+            <div class="loop__img">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (26).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+            </div>
+            <div class="loop__img">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (27).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+            </div>
+            <div class="loop__img">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (28).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+            </div>
+            <div class="loop__img">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (25).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+            </div>
+            <div class="loop__img">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (26).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+            </div>
+            <div class="loop__img">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (27).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+            </div>
+            <div class="loop__img">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (28).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+            </div>
+            <div class="loop__img">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (25).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+            </div>
+            <div class="loop__img">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (26).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+            </div>
+            <div class="loop__img">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (27).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+            </div>
+            <div class="loop__img">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (28).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+            </div>
+            <div class="loop__img">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (25).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+            </div>
+            <div class="loop__img">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (26).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+            </div>
+            <div class="loop__img">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (27).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+            </div>
+            <div class="loop__img">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (28).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+            </div>
+          </div>
+        </div>
+        <div class="real-estate bubble" style="translate: none; rotate: none; scale: none; opacity: 0; transform: translate(-400px, 0px);">
+          <div class="white_dot"></div>
+          <p>Real-Estate</p>
+        </div>
+        <div class="restaurant bubble" style="translate: none; rotate: none; scale: none; opacity: 0; transform: translate(400px, 0px);">
+          <div class="white_dot"></div>
+          <p>Restaurant</p>
+        </div>
+        <div class="astrology bubble" style="translate: none; rotate: none; scale: none; opacity: 0; transform: translate(400px, 0px);">
+          <div class="white_dot"></div>
+          <p>Astrology Business</p>
+        </div>
+        <div class="course bubble" style="translate: none; rotate: none; scale: none; opacity: 0; transform: translate(-400px, 0px);">
+          <div class="white_dot"></div>
+          <p>Course</p>
+        </div>
+        <div class="webinar bubble" style="translate: none; rotate: none; scale: none; opacity: 0; transform: translate(400px, 0px);">
+          <div class="white_dot"></div>
+          <p>Webinar</p>
+        </div>
+        <div class="ecommerce bubble" style="translate: none; rotate: none; scale: none; opacity: 0; transform: translate(-400px, 0px);">
+          <div class="white_dot"></div>
+          <p>Ecommerce</p>
+        </div>
+      </div>
+      <div class="creativity" style="opacity: 0;">
+        <h2 class="creativity__h2" style="translate: none; rotate: none; scale: none; transform: translate(-200px, 0px); opacity: 0;">
+          Track Data from all platforms, like Meta Ads, Google Ads for better
+          tracking, optimization &amp; Scaling
+        </h2>
+        <p class="creativity__p" style="translate: none; rotate: none; scale: none; transform: translate(-200px, 0px); opacity: 0;">
+          Revolutionize the way you utilize data and AI to enhance your Traffic
+          and Sales, while minimizing CPC and CPL to boost your profitability.
+          Data is the new gold, and Myzer assists you in tracking data from all
+          advertising platforms for improved optimization, tracking, and
+          scaling. It has never been easier to make data-driven decisions.
+        </p>
+        <button class="creativity__btn" style="translate: none; rotate: none; scale: none; transform: translate(-200px, 0px); opacity: 0;">Pre-book Now!</button>
+        <div class="creativity__img__container" style="translate: none; rotate: none; scale: none; transform: translate(200px, 0px); opacity: 0;">
+          <img loading="lazy" src="./assets/ezgif.com-gif-maker (7).webp" alt="" class="creativity__img">
+        </div>
+      </div>
+      <div class="prebook_section__demo__container">
+        <div class="pin-spacer" style="order: 0; place-self: auto; grid-area: auto; z-index: auto; float: none; flex-shrink: 1; display: block; margin: 100px 0px 0px; inset: 0px; position: relative; flex-basis: auto; overflow: visible; box-sizing: border-box; width: 755px; height: 634px; padding: 0px;"><div class="prebook_section__demo" style="translate: none; rotate: none; scale: none; inset: 0px auto auto 0px; margin: 0px; max-width: 754.568px; width: 754.568px; max-height: 633.806px; height: 633.806px; padding: 0px; transform: translate(0px, 0px);">
+          <img loading="lazy" src="./assets/ezgif.com-gif-maker (8).webp" alt="" class="prebook_section__demo__img">
+          <h1 class="prebook_section__demo_title" style="opacity: 1;">
+            All you need to do is Just Drag &amp; Drop to create an High-Converting
+            Landing Page!
+          </h1>
+          <div class="optionBar" style="translate: none; rotate: none; scale: none; transform: translate(0%, 0%);">
+            <p class="optionBarTitle" style="opacity: 1;">Option Bar</p>
+            <div class="optionBarNav" style="border-color: rgb(255, 0, 168);">
+              <p>Home</p>
+              <p>Product</p>
+              <p>About</p>
+              <p>Contact</p>
+              <div class="nav_dots optionBar_dot1" style="background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"></div>
+              <div class="nav_dots optionBar_dot2" style="background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"></div>
+              <div class="nav_dots optionBar_dot3" style="background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"></div>
+              <div class="nav_dots optionBar_dot4" style="background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"></div>
+            </div>
+          </div>
+          <div class="logo" style="translate: none; rotate: none; scale: none; transform: translate(0%, 0%);">
+            <p class="logoTitle" style="opacity: 1;">Logo</p>
+            <div class="logoImgContainer" style="border-color: rgb(0, 133, 255);">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (32).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+              <div class="logo_dots optionBar_dot1" style="background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"></div>
+              <div class="logo_dots optionBar_dot2" style="background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"></div>
+              <div class="logo_dots optionBar_dot3" style="background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"></div>
+              <div class="logo_dots optionBar_dot4" style="background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"></div>
+            </div>
+          </div>
+          <div class="tools" style="translate: none; rotate: none; scale: none; transform: translate(0%, 0%);">
+            <p class="toolsTitle" style="opacity: 1;">Icon Bar</p>
+            <div class="toolsIconContainer" style="border-color: rgb(0, 133, 255);">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (6).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+              <div class="tools_dots optionBar_dot1" style="background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"></div>
+              <div class="tools_dots optionBar_dot2" style="background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"></div>
+              <div class="tools_dots optionBar_dot3" style="background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"></div>
+              <div class="tools_dots optionBar_dot4" style="background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"></div>
+            </div>
+          </div>
+
+          <div class="watermark2" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0%); opacity: 0;">
+            <div class="watermarkImgContainer2">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (23).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+            </div>
+          </div>
+          <div class="watermark" style="translate: none; rotate: none; scale: none; transform: translate(0%, 0%);">
+            <p class="watermarkTitle" style="opacity: 1;">Text</p>
+            <div class="watermarkImgContainer" style="border-color: rgb(255, 152, 214);">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (34).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+              <div class="watermark_dots optionBar_dot1" style="background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"></div>
+              <div class="watermark_dots optionBar_dot2" style="background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"></div>
+              <div class="watermark_dots optionBar_dot3" style="background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"></div>
+              <div class="watermark_dots optionBar_dot4" style="background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"></div>
+            </div>
+          </div>
+          <div class="prebook_section__demo__shoe" style="translate: none; rotate: none; scale: none; transform: translate(0%, 0%);">
+            <p class="prebook_section__demo__shoe_p" style="opacity: 1;">Product</p>
+            <img loading="lazy" src="./assets/ezgif.com-gif-maker.webp" alt="" class="prebook_section__demo__shoe__img" style="border-color: rgb(36, 255, 0) rgb(36, 255, 0) rgb(255, 255, 255) rgb(255, 255, 255);">
+          </div>
+        </div></div>
+      </div>
+
+      <!-- <div class="prebook_section__gradient_img">
+        <div class="prebook_section__box1"></div>
+        <div class="prebook_section__box2"></div>
+      </div> -->
+    </section>
+    <section class="feature_section">
+      <!-- <div class="feature_section__gradient"> -->
+      <!-- <img loading="lazy"
+          src="./assets/Group 48095633.png"
+          alt=""
+          class="feature_section__gradient__img"
+        /> -->
+      <!-- <div class="feature_section_box1"></div>
+        <div class="feature_section_box2"></div>
+      </div> -->
+      <div id="feature" class="feature__heading">
+        <h1>
+          There is more that <br>
+          Myzer can do for you
+        </h1>
+      </div>
+
+      <div class="feature__para">
+        <p>
+          With Myzer, you not only sell but also entertain your customers
+          without writing <br>
+          complex code, designing graphic or writing copies.
+
+          <span class="orange_para_text">Myzer's AI handles all of that for you effortlessly.</span>
+        </p>
+      </div>
+
+      <div class="feature__card-wrap">
+        <div class="feature__card">
+          <div class="card_img">
+            <img loading="lazy" src="https://res.cloudinary.com/lpmaker/image/upload/v1687454513/Rectangle_23_zpxwvl.png" alt="" style="width: 100%; height: 100%; object-fit: contain">
+          </div>
+
+          <div class="feature__card-text">
+            <h2>1000+ Templates</h2>
+            <p>
+              1000+ Tested &amp; Proven templates for high conversion and superior
+              engagement
+            </p>
+          </div>
+        </div>
+
+        <div class="feature__card">
+          <div class="card_img">
+            <img loading="lazy" src="https://res.cloudinary.com/lpmaker/image/upload/v1687454513/23_uafnso.png" alt="" style="width: 100%; height: 100%; object-fit: contain">
+          </div>
+
+          <div class="feature__card-text">
+            <h2>Artificial Intelligence</h2>
+            <p>
+              Myzer's AI crafts high-converting copies for your product
+              effortlessly. Just provide a brief description, and let Myzer do
+              the rest.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature__card">
+          <div class="card_img">
+            <img loading="lazy" src="https://res.cloudinary.com/lpmaker/image/upload/v1687454513/24_c222dp.png" alt="" style="width: 100%; height: 100%; object-fit: contain">
+          </div>
+
+          <div class="feature__card-text">
+            <h2>Speed Optimization</h2>
+            <p>
+              Experience seamless and lightning-fast loading times for your
+              landing pages with automated speed optimization.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="templates" class="sale_section">
+      <h1 class="sale_section__h1">
+        Convert 🚀 like Crazy without Hiring a
+        <span class="sale_section__gradient_text"> Copywriter!</span>
+      </h1>
+      <!-- <div class="sale_section__gradient"></div> -->
+
+      <div class="sale_section__screenshots">
+        <div class="sale_section__hand1">
+          <img loading="lazy" src="./assets/ezgif.com-gif-maker (15).webp" alt="" class="sale_section__hand1_img">
+        </div>
+        <div class="sale_section__hand2">
+          <img loading="lazy" src="./assets/ezgif.com-gif-maker (30).webp" alt="" style="width: 100%; height: 100%; object-fit: contain">
+          <div class="sale_section__hand2_img_container">
+            <img loading="lazy" src="./assets/ezgif.com-gif-maker (22).webp" alt="" style="
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                object-position: top;
+              ">
+          </div>
+        </div>
+        <div class="sale_section__screenshots__text">
+          <h2 class="sale_section__screenshots__text__h2">
+            Create Compelling, Engaging &amp; Converting Copies within Minute
+            without hiring copywriter
+          </h2>
+          <p class="sale_section__screenshots__text__p">
+            Myzer's AI is expertly trained to generate persuasive copy that
+            perfectly matches your brand's voice, ensuring it feels authentic.
+            With lightning-fast speed, it delivers attention-grabbing headlines,
+            converting bullet points, and compelling descriptions.
+          </p>
+          <button class="sale_section__screenshots__text__btn">
+            Pre-Book Now!
+          </button>
+        </div>
+        <div class="sale_section__ai_div"></div>
+
+        <div class="sale_section__screenshots__image_container">
+          <img loading="lazy" src="./assets/ezgif.com-gif-maker (24).webp" alt="" class="sale_section__screenshots__image_container_img" style="width: 100%; object-fit: cover; object-position: center top; border-radius: 20px; height: 0px;">
+        </div>
+      </div>
+      <div class="sale_section__features">
+        <div class="divider">
+          <div class="left_part">
+            
+            <div class="pin-spacer" style="order: 0; place-self: auto; grid-area: auto; z-index: auto; float: none; flex-shrink: 1; display: flex; margin: 0px; inset: auto; position: relative; flex-basis: auto; overflow: visible; box-sizing: border-box; width: 448px; height: 1344px; padding: 0px 0px 672px;"><div class="image image_1" style="translate: none; rotate: none; scale: none; inset: 0px auto auto 0px; margin: 0px; max-width: 447.617px; width: 447.617px; max-height: 672.233px; height: 672.233px; padding: 0px; transform: translate(0px, 0px);">
+              <img loading="lazy" src="./assets/Comp-2.gif" alt="" class="sale_section__whatsapp__img">
+              <!-- <img loading="lazy"
+                src="./assets/Colors-VB01.gif"
+                alt=""
+              /> -->
+            </div></div><div class="content content_2">
+              <div class="sale_section__feature_text sale_section__feature_text__sms">
+                <h3>SMS Automation Integration</h3>
+                <p>
+                  Connect instantly with your customers and increase brand
+                  recall &amp; conversion in the most cost-effective and fastest way
+                  possible.
+                </p>
+                <ul>
+                  <li>Personalised messages</li>
+                  <li>Direct &amp; Immediate Response</li>
+                  <li>Trigger Bases Automation</li>
+                  <li>High Open Rate</li>
+                  <li>Cost Effective</li>
+                </ul>
+              </div>
+            </div>
+            
+          <div class="pin-spacer" style="order: 0; place-self: auto; grid-area: auto; z-index: auto; float: none; flex-shrink: 1; display: flex; margin: 0px; inset: auto; position: relative; flex-basis: auto; overflow: visible; box-sizing: border-box; width: 448px; height: 1344px; padding: 0px 0px 672px;"><div class="image image_3" style="translate: none; rotate: none; scale: none; inset: 0px auto auto 0px; margin: 0px; max-width: 447.987px; width: 447.987px; max-height: 672.233px; height: 672.233px; padding: 0px; transform: translate(0px, 0px);">
+              <img loading="lazy" src="./assets/ezgif.com-gif-maker (17).webp" alt="" class="sale_section__mail__img">
+            </div></div></div>
+          <div class="right_part">
+            <div class="content content_1">
+              <div class="sale_section__feature_text sale_section__feature_text__whatsapp">
+                <h3>
+                  Experience the Power of WhatsApp Marketing: Connect your
+                  Landing Page with WhatsApp within Second
+                </h3>
+                <p>
+                  Leverage the power of Whatsapp automation to connect
+                  personally with your audience and skyrocket your conversion
+                  rate.
+                </p>
+                <ul>
+                  <li>Instant messages &amp; Follow up</li>
+                  <li>Personalised messages</li>
+                  <li>Instant Reply</li>
+                  <li>24x7 supports</li>
+                  <li>Increases conversion</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="pin-spacer" style="order: 0; place-self: auto; grid-area: auto; z-index: auto; float: none; flex-shrink: 1; display: flex; margin: 0px; inset: auto; position: relative; flex-basis: auto; overflow: visible; box-sizing: border-box; width: 447px; height: 2017px; padding: 0px 0px 1345px;"><div class="image image_2" style="translate: none; rotate: none; scale: none; inset: 0px auto auto 0px; margin: 0px; max-width: 447.246px; width: 447.246px; max-height: 672.233px; height: 672.233px; padding: 0px; transform: translate(0px, 0px);">
+              <img loading="lazy" src="./assets/Group 2.png" alt="" class="sale_section__sms__img">
+            </div></div><div class="content content_3">
+              <div class="sale_section__feature_text sale_section__feature_text__mail">
+                <h3>Email marketing on Automation</h3>
+                <p>
+                  Automate your email flow with myzer for direct, fast &amp;
+                  professional communication with your customers.
+                </p>
+                <ul>
+                  <li>Increases conversion</li>
+                  <li>Personalised Communication</li>
+                  <li>Automated response on Triggers</li>
+                  <li>Advance Data Tracking &amp; Analysis</li>
+                  <li>Automate follow ups</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sale_section__whatsapp__mobile">
+          <div class="sale_section__whatsapp">
+            <img loading="lazy" src="./assets/Comp-2.gif" alt="" class="sale_section__whatsapp__img">
+          </div>
+          <div class="sale_section__feature_text sale_section__feature_text__whatsapp">
+            <h3>
+              Experience the Power of WhatsApp Marketing: Connect your Landing
+              Page with WhatsApp within Second
+            </h3>
+            <p>
+              Leverage the power of Whatsapp automation to connect personally
+              with your audience and skyrocket your conversion rate.
+            </p>
+            <ul>
+              <li>Instant messages &amp; Follow up</li>
+              <li>Personalised messages</li>
+              <li>Instant Reply</li>
+              <li>24x7 supports</li>
+              <li>Increases conversion</li>
+            </ul>
+          </div>
+        </div>
+        <div class="sale_section__sms__mobile">
+          <div class="sale_section__sms">
+            <img loading="lazy" src="./assets/Group 2.png" alt="" class="sale_section__sms__img">
+          </div>
+          <div class="sale_section__feature_text sale_section__feature_text__whatsapp">
+            <h3>SMS Automation Integration</h3>
+            <p>
+              Connect instantly with your customers and increase brand recall &amp;
+              conversion in the most cost-effective and fastest way possible.
+            </p>
+            <ul>
+              <li>Personalised messages</li>
+              <li>Direct &amp; Immediate Response</li>
+              <li>Trigger Bases Automation</li>
+              <li>High Open Rate</li>
+              <li>Cost Effective</li>
+            </ul>
+          </div>
+        </div>
+        <div class="sale_section__mail__mobile">
+          <div class="sale_section__mail">
+            <img loading="lazy" src="./assets/ezgif.com-gif-maker (18).webp" alt="" class="sale_section__mail__img">
+          </div>
+          <div class="sale_section__feature_text sale_section__feature_text__whatsapp">
+            <h3>Email marketing on Automation</h3>
+            <p>
+              Automate your email flow with myzer for direct, fast &amp;
+              professional communication with your customers.
+            </p>
+            <ul>
+              <li>Increases conversion</li>
+              <li>Personalised Communication</li>
+              <li>Automated response on Triggers</li>
+              <li>Advance Data Tracking &amp; Analysis</li>
+              <li>Automate follow ups</li>
+            </ul>
+          </div>
+        </div>
+        <div class="sale_section__webhook">
+          <div class="sale_section__webhook__img_div">
+            <img loading="lazy" src="./assets/ezgif.com-gif-maker (19).webp" alt="" class="sale_section__webhook__img">
+          </div>
+
+          <div class="sale_section__feature_text sale_section__feature--webhook_text">
+            <h3>Connect with multiple software using Webhook</h3>
+            <p>
+              Unleash the superpowers of your landing page by seamlessly
+              integrating various software tailored to your requirements.
+              Automate your sales process and funnel effortlessly, empowering
+              you to increase conversions with a smooth and streamlined flow.
+            </p>
+            <ul>
+              <li>Powerful Integration Capabilities</li>
+              <li>Effortless Configuration</li>
+              <li>Real-Time Data Synchronization</li>
+              <li>Advanced Workflow Automation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="checkoutPages_section">
+      <!-- <div class="checkout_box1"></div>
+      <div class="checkout_box2"></div> -->
+      <div class="checkout__heading">
+        <h1>Custom <span class="text_gradient">Checkout Pages</span></h1>
+      </div>
+      <div class="checkout__grid">
+        <p class="checkout__grid__p">
+          With custom checkout pages, you can take control of the entire
+          purchasing process by optimising it for specific products and
+          highlighting extra benefits and descriptions to boost conversions.
+        </p>
+        <img loading="lazy" src="./assets/ezgif.com-gif-maker (14).webp" alt="" class="checkout__grid__img1">
+        <div class="checkout__grid__list">
+          <p>🚀 Support high quality Images</p>
+          <p>🚀 Conversion-Driven Layout</p>
+          <p>🚀 Coupon Pop out to increase conversion</p>
+          <p>🚀 Upsell &amp; Cross sell</p>
+          <p>🚀 PC &amp; Mobile optimised designs</p>
+        </div>
+        <img loading="lazy" src="./assets/ezgif.com-gif-maker (10).webp" alt="" class="checkout__grid__img2">
+      </div>
+      <div class="checkout__grid__mobile">
+        <img loading="lazy" src="./assets/ezgif.com-gif-maker (10).webp" alt="">
+      </div>
+      <p class="checkout_main_text_mobile">
+        With Custom Checkout Pages, you can take full control of the entire
+        purchasing process, tailoring it to align with your brand, products, and
+        customer preferences.
+      </p>
+    </section>
+    <section id="pricing" class="payment_section">
+      <!-- <div class="payment_gradient_div1">
+        <div class="payment_box1"></div>
+        <div class="payment_box2"></div>
+      </div>
+      <div class="payment_gradient_div2">
+        <div class="payment_box1"></div>
+        <div class="payment_box2"></div>
+      </div> -->
+      <h1 class="payment_section__h1">Choose the Payment Gateway you want</h1>
+      <p class="payment_section__p">
+        <!-- Your one-stop payment gateway solution for seamless online transactions.
+        We understand the importance of smooth, secure, and hassle-free payment
+        processing, and our advanced platform is designed to meet the needs of
+        businesses of all sizes. -->
+      </p>
+      <div class="payment_section__logos">
+        <div class="payment_section__logo" style="translate: none; rotate: none; scale: none; opacity: 0; transform: translate(0px, 100px);">
+          <img loading="lazy" src="./assets/ezgif.com-gif-maker (21).webp" alt="" class="razorpay">
+          <p>Quest For Excellence</p>
+        </div>
+        <div class="payment_section__logo" style="translate: none; rotate: none; scale: none; opacity: 0; transform: translate(0px, 100px);">
+          <img loading="lazy" src="./assets/ezgif.com-gif-maker (1).webp" alt="" class="cashfree">
+          <p>Trusted by enterprises Loved by developers</p>
+        </div>
+        <div class="payment_section__logo" style="translate: none; rotate: none; scale: none; opacity: 0; transform: translate(0px, 100px);">
+          <img loading="lazy" src="./assets/ezgif.com-gif-maker (20).webp" alt="" class="instamojo">
+          <p>Enabling business to sell digital products online</p>
+        </div>
+        <div class="payment_section__logo" style="translate: none; rotate: none; scale: none; opacity: 0; transform: translate(0px, 100px);">
+          <img loading="lazy" src="./assets/Mask group (7).png" alt="" class="stripe">
+          <p>Payment infrastructure for the internet</p>
+        </div>
+      </div>
+      <div class="payment_section__mac_div">
+        <img loading="lazy" src="./assets/ezgif.com-gif-maker (12).webp" alt="" class="payment_section__mac">
+      </div>
+      <div class="payment_section__iphone_div">
+        <img loading="lazy" src="./assets/ezgif.com-gif-maker (11).webp" alt="" class="payment_section__mac">
+      </div>
+    </section>
+    <section class="templates_section">
+      <!-- <div class="templates_dashboard__gradient_bg">
+        <div class="box1"></div>
+        <div class="box2"></div>
+      </div> -->
+
+      <h1 class="templates_section__h1">
+        Access Over
+        <span class="templates_section__gradient-text">1000+ Templates, Images &amp; Icons</span>
+        Instantly Available for all your projects!
+      </h1>
+      <p class="templates_section__p">
+        Search any keyword &amp; Instantly import stunning media for your projects
+        in Just 1 click. And It’s Royalty free for commercial uses!
+      </p>
+      <div class="templates_dashboard">
+        <img loading="lazy" src="./assets/ezgif.com-gif-maker (35).webp" alt="" class="templates_dashboard__img">
+      </div>
+      <div class="templates_cards">
+        <!-- <div class="box1_2"></div>
+        <div class="box2_2"></div> -->
+        <h2 class="templates_cards__h2">Myzer Features for Landing Page!</h2>
+        <div class="templates_cards__grid">
+          <div class="templates_cards__grid__card">
+            <div class="templates_cards__grid__card__image_div">
+              <img loading="lazy" src="./assets/Rectangle 975 (1).png" alt="" class="templates_cards__grid__card__image">
+            </div>
+            <h3 class="templates_cards__grid__card__h3">Fast Speed</h3>
+            <p class="templates_cards__grid__card__p">
+              Lightning-fast loading for an exceptional user experience.
+            </p>
+          </div>
+          <div class="templates_cards__grid__card">
+            <div class="templates_cards__grid__card__image_div">
+              <img loading="lazy" src="./assets/Rectangle 975 (2).png" alt="" class="templates_cards__grid__card__image">
+            </div>
+            <h3 class="templates_cards__grid__card__h3">SEO Ready</h3>
+            <p class="templates_cards__grid__card__p">
+              Optimize your landing page for better search engine visibility.
+            </p>
+          </div>
+          <div class="templates_cards__grid__card">
+            <div class="templates_cards__grid__card__image_div">
+              <img loading="lazy" src="./assets/Rectangle 975 (3).png" alt="" class="templates_cards__grid__card__image">
+            </div>
+            <h3 class="templates_cards__grid__card__h3">Responsive</h3>
+            <p class="templates_cards__grid__card__p">
+              Seamless and engaging experience on all devices and screen sizes.
+            </p>
+          </div>
+          <div class="templates_cards__grid__card">
+            <div class="templates_cards__grid__card__image_div">
+              <img loading="lazy" src="./assets/Rectangle 975 (4).png" alt="" class="templates_cards__grid__card__image">
+            </div>
+            <h3 class="templates_cards__grid__card__h3">Global CDN</h3>
+            <p class="templates_cards__grid__card__p">
+              Reach your audience worldwide with a reliable content delivery
+              network.
+            </p>
+          </div>
+          <div class="templates_cards__grid__card">
+            <div class="templates_cards__grid__card__image_div">
+              <img loading="lazy" src="./assets/Rectangle 975 (5).png" alt="" class="templates_cards__grid__card__image">
+            </div>
+            <h3 class="templates_cards__grid__card__h3">Custom Domain</h3>
+            <p class="templates_cards__grid__card__p">
+              Establish your brand identity with a personalized domain.
+            </p>
+          </div>
+          <div class="templates_cards__grid__card">
+            <div class="templates_cards__grid__card__image_div">
+              <img loading="lazy" src="./assets/Rectangle 975 (6).png" alt="" class="templates_cards__grid__card__image">
+            </div>
+            <h3 class="templates_cards__grid__card__h3">Email Notification</h3>
+            <p class="templates_cards__grid__card__p">
+              Stay informed with real-time email updates and notifications.
+            </p>
+          </div>
+          <div class="templates_cards__grid__card">
+            <div class="templates_cards__grid__card__image_div">
+              <img loading="lazy" src="./assets/Rectangle 975 (5).png" alt="" class="templates_cards__grid__card__image">
+            </div>
+            <h3 class="templates_cards__grid__card__h3">Whatsapp Automation</h3>
+            <p class="templates_cards__grid__card__p">
+              Connect and engage with your audience through automated Whatsapp
+              messages.
+            </p>
+          </div>
+          <div class="templates_cards__grid__card">
+            <div class="templates_cards__grid__card__image_div">
+              <img loading="lazy" src="./assets/Rectangle 975 (6).png" alt="" class="templates_cards__grid__card__image">
+            </div>
+            <h3 class="templates_cards__grid__card__h3">
+              Custom Payment Gateway
+            </h3>
+            <p class="templates_cards__grid__card__p">
+              Accept payments seamlessly with your preferred payment gateway.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="rating_section">
+      <!-- <div class="templates_dashboard__gradient_bg_1">
+        <div class="box1_2"></div>
+        <div class="box2_2"></div>
+      </div> -->
+      <h1 class="rating_section__h1">Competition Analysis</h1>
+      <div class="rating_section__flex_div">
+        <!-- <img loading="lazy"
+          src="./assets/Group 4650 1 (1).png"
+          alt=""
+          class="rating_section__img"
+        /> -->
+        <div class="rating_left_div">
+          <p>Speed <span class="first_span">(GT Matrix)</span></p>
+          <p>Easy to Use</p>
+          <p>Pricing</p>
+          <p>AI powered</p>
+          <p>UI/UX <span class="second_span">(Customer Persona)</span></p>
+          <p>Time to Setup</p>
+        </div>
+        <div class="rating_right_div">
+          <div class="rating__compare rating_myzer">
+            <div class="rating__compare__logo__div">
+              <img loading="lazy" src="./assets/bl.png" alt="myzerLogo" class="rating__compare__logo">
+            </div>
+
+            <div class="rating__compare__wrapper">
+              <img loading="lazy" src="./assets/right-arrow.png" alt="">
+              <p>2.3 sec</p>
+            </div>
+            <div class="rating__compare__wrapper">
+              <img loading="lazy" src="./assets/right-arrow.png" alt="">
+              <p>No developer Required</p>
+            </div>
+            <div class="rating__compare__wrapper">
+              <img loading="lazy" src="./assets/right-arrow.png" alt="">
+              <p>$14.99/Month</p>
+            </div>
+            <div class="rating__compare__wrapper">
+              <img loading="lazy" src="./assets/right-arrow.png" alt="">
+              <p>Yes</p>
+            </div>
+            <div class="rating__compare__wrapper">
+              <img loading="lazy" src="./assets/right-arrow.png" alt="">
+              <p>100+ Templates Available</p>
+            </div>
+            <div class="rating__compare__wrapper">
+              <img loading="lazy" src="./assets/right-arrow.png" alt="">
+              <p>1 Hour</p>
+            </div>
+          </div>
+          <div class="rating__compare rating_shopify">
+            <div class="rating__compare__logo__div">
+              <img loading="lazy" src="./assets/pngwing.com.png" alt="shopifyLogo" class="rating__compare__logo">
+            </div>
+            <div class="rating__compare__wrapper">
+              <img loading="lazy" src="./assets/right-arrow (1).png" alt="">
+              <p>6.4 sec</p>
+            </div>
+            <div class="rating__compare__wrapper">
+              <img loading="lazy" src="./assets/right-arrow (1).png" alt="">
+              <p>Developer Required</p>
+            </div>
+            <div class="rating__compare__wrapper">
+              <img loading="lazy" src="./assets/right-arrow (1).png" alt="">
+              <p>$29/month</p>
+            </div>
+            <div class="rating__compare__wrapper">
+              <img loading="lazy" src="./assets/right-arrow (1).png" alt="">
+              <p>No</p>
+            </div>
+            <div class="rating__compare__wrapper">
+              <img loading="lazy" src="./assets/right-arrow (1).png" alt="">
+              <p>Almost Same in all cases</p>
+            </div>
+
+            <div class="rating__compare__wrapper">
+              <img loading="lazy" src="./assets/right-arrow (1).png" alt="">
+              <p>3 days</p>
+            </div>
+          </div>
+          <div class="rating__compare rating_funnels">
+            <div class="rating__compare__logo__div">
+              <img loading="lazy" src="./assets/pngfind.com-mailchimp-logo-png-6617272.png" alt="funnelsLogo" class="rating__compare__logo">
+            </div>
+
+            <div class="rating__compare__wrapper">
+              <img loading="lazy" src="./assets/right-arrow.png" alt="">
+              <p>14.6 sec</p>
+            </div>
+            <div class="rating__compare__wrapper">
+              <img loading="lazy" src="./assets/right-arrow (1).png" alt="">
+              <p>No Developer Required</p>
+            </div>
+            <div class="rating__compare__wrapper">
+              <img loading="lazy" src="./assets/right-arrow.png" alt="">
+              <p>$147/Month</p>
+            </div>
+            <div class="rating__compare__wrapper">
+              <img loading="lazy" src="./assets/right-arrow.png" alt="">
+              <p>No</p>
+            </div>
+            <div class="rating__compare__wrapper">
+              <img loading="lazy" src="./assets/right-arrow.png" alt="">
+              <p>5 option Available</p>
+            </div>
+            <div class="rating__compare__wrapper">
+              <img loading="lazy" src="./assets/right-arrow.png" alt="">
+              <p>3 hour</p>
+            </div>
+          </div>
+          <div class="rating__compare rating_woo">
+            <div class="rating__compare__logo__div">
+              <img loading="lazy" src="./assets/62b45f094d5b68158481cb43.png" alt="wooLogo" class="rating__compare__logo">
+            </div>
+
+            <div class="rating__compare__wrapper">
+              <img loading="lazy" src="./assets/right-arrow (1).png" alt="">
+              <p>4.2 sec</p>
+            </div>
+            <div class="rating__compare__wrapper">
+              <img loading="lazy" src="./assets/right-arrow (1).png" alt="">
+              <p>Developer Required</p>
+            </div>
+            <div class="rating__compare__wrapper">
+              <img loading="lazy" src="./assets/right-arrow (1).png" alt="">
+              <p>$49/Month</p>
+            </div>
+            <div class="rating__compare__wrapper">
+              <img loading="lazy" src="./assets/right-arrow (1).png" alt="">
+              <p>No</p>
+            </div>
+            <div class="rating__compare__wrapper">
+              <img loading="lazy" src="./assets/right-arrow (1).png" alt="">
+              <p>Unlimited Options</p>
+            </div>
+            <div class="rating__compare__wrapper">
+              <img loading="lazy" src="./assets/right-arrow (1).png" alt="">
+              <p>15 Days</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rating_section__rating_img_div">
+        <img loading="lazy" src="./assets/Group 48095649.png" alt="" class="rating_section__rating_img">
+        <img loading="lazy" src="https://res.cloudinary.com/lpmaker/image/upload/v1687435493/Group_48095503_stjwsf.png  " alt="" class="rating_section__rating_img">
+        <p class="ratingText">
+          4.8 out of 5 (review rating) Over 1,200+ reviews
+        </p>
+      </div>
+      <!-- <div class="rating_section__rating_img_div__mobile">
+        <img loading="lazy"
+          src="./assets/Group 48095649.png"
+          alt=""
+          class="rating_section__rating_img"
+        />
+      </div> -->
+      <h2 class="rating_section__h2">
+        Highly Rated 4.8 Out of 5 by 1,200+ Entrepreneurs Just Like you!
+      </h2>
+      <p class="rating_section__p">
+        Join the global community of entrepreneurs, business owners,
+        freelancers, and marketers using CreateStudio to create stunning, high
+        converting sales videos to grow their business!
+      </p>
+      <div class="rating_section__testimonials_grid">
+        <!-- <img loading="lazy"
+          src="./assets/Group 48095658.png"
+          alt=""
+          class="rating_section__testimonial__img"
+        /> -->
+        <div class="rating_section__testimonial_item item1">
+          <img loading="lazy" src="./assets/vinicius-wiesehofer-UOavP_Z38lE-unsplash.jpg" alt="" class="item_img">
+          <p class="item_name">Sarah Johnson</p>
+          <p class="item_review">
+            "Thanks to this amazing website, I effortlessly created stunning
+            landing pages. The AI-powered feature made the process enjoyable and
+            efficient. Highly recommended!"
+          </p>
+        </div>
+        <div class="rating_section__testimonial_item item2">
+          <img loading="lazy" src="./assets/talen-de-st-croix-jxGwXH_BdGU-unsplash.jpg" alt="" class="item_img">
+          <p class="item_name">Mark Thompson</p>
+          <p class="item_review">
+            "I'm blown away by the ease of building landing pages using this
+            website. The AI-powered technology is a game-changer. It saved me
+            time and effort. Phenomenal experience!"
+          </p>
+        </div>
+        <div class="rating_section__testimonial_item item3">
+          <img loading="lazy" src="./assets/allison-griffith-Q76DPRQ3Ix0-unsplash.jpg" alt="" class="item_img">
+          <p class="item_name">Emily Ramirez</p>
+          <p class="item_review">
+            "Impressed with the results! The AI-powered feature on this website
+            made designing landing pages a breeze. It's intuitive,
+            user-friendly, and produces stunning outcomes. Fantastic platform!"
+          </p>
+        </div>
+        <div class="rating_section__testimonial_item item4">
+          <img loading="lazy" src="./assets/warren-VVEwJJRRHgk-unsplash.jpg" alt="" class="item_img">
+          <p class="item_name">Alex Patel</p>
+          <p class="item_review">
+            "I've tried several platforms, but this website with AI-powered
+            technology is unmatched! It understands my needs, and the landing
+            pages created are top-notch. Exceeded my expectations!"
+          </p>
+        </div>
+        <div class="rating_section__testimonial_item item5">
+          <img loading="lazy" src="./assets/lau-keith-dcZsxUAAJXs-unsplash.jpg" alt="" class="item_img">
+          <p class="item_name">Mia Thompson</p>
+          <p class="item_review">
+            "Creating landing pages was always daunting, but this website
+            changed everything. The AI-powered feature simplified the process,
+            and I'm thrilled with the professional results. Love it!"
+          </p>
+        </div>
+        <div class="rating_section__testimonial_item item6">
+          <img loading="lazy" src="./assets/yerlin-matu-p53yA70I-GQ-unsplash.jpg" alt="" class="item_img">
+          <p class="item_name">John Davis</p>
+          <p class="item_review">
+            "Highly impressed with this website! The AI-powered technology is an
+            invaluable tool for building landing pages. It's like having a
+            professional designer at my fingertips. Great job!"
+          </p>
+        </div>
+      </div>
+      <!-- <div class="rating_section__testimonial__mobile">
+        <img loading="lazy"
+          src="./assets/Group 48095735.png"
+          alt=""
+          class="rating_section__testimonial__img"
+        />
+      </div> -->
+    </section>
+    <!-- <section class="contact_section">
+      <div class="contact_section_image_div">
+        <img loading="lazy"
+          src="./assets/Group 48095645 (3).png"
+          alt=""
+          class="contact_section_img"
+        />
+      </div>
+      <div class="contact_section_image_div__mobile">
+        <img loading="lazy"
+          src="./assets/Group 48095637 1.png"
+          alt=""
+          class="contact_section_img"
+        />
+      </div>
+      <div class="contact_section_beta_img_div">
+        <img loading="lazy"
+          src="./assets/Group 48095708.png"
+          alt=""
+          class="contact_section_beta_img"
+        />
+      </div>
+    </section> -->
+    <div class="contact_section">
+      <!-- <div class="prebook_section_img_container">
+        <img loading="lazy"
+          src="./assets/ezgif.com-gif-maker (36).webp"
+          alt=""
+          class="prebook_section_img_container__img"
+        />
+        <div class="loop_container1 loop_container">
+          <div class="loop1 loop">
+            <div class="loop__img">
+              <img loading="lazy"
+                src="./assets/ezgif.com-gif-maker (25).webp"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="loop__img">
+              <img loading="lazy"
+                src="./assets/ezgif.com-gif-maker (26).webp"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="loop__img">
+              <img loading="lazy"
+                src="./assets/ezgif.com-gif-maker (27).webp"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="loop__img">
+              <img loading="lazy"
+                src="./assets/ezgif.com-gif-maker (28).webp"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="loop__img">
+              <img loading="lazy"
+                src="./assets/ezgif.com-gif-maker (25).webp"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="loop__img">
+              <img loading="lazy"
+                src="./assets/ezgif.com-gif-maker (26).webp"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="loop__img">
+              <img loading="lazy"
+                src="./assets/ezgif.com-gif-maker (27).webp"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="loop__img">
+              <img loading="lazy"
+                src="./assets/ezgif.com-gif-maker (28).webp"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="loop__img">
+              <img loading="lazy"
+                src="./assets/ezgif.com-gif-maker (25).webp"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="loop__img">
+              <img loading="lazy"
+                src="./assets/ezgif.com-gif-maker (26).webp"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="loop__img">
+              <img loading="lazy"
+                src="./assets/ezgif.com-gif-maker (27).webp"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="loop__img">
+              <img loading="lazy"
+                src="./assets/ezgif.com-gif-maker (28).webp"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="loop__img">
+              <img loading="lazy"
+                src="./assets/ezgif.com-gif-maker (25).webp"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="loop__img">
+              <img loading="lazy"
+                src="./assets/ezgif.com-gif-maker (26).webp"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="loop__img">
+              <img loading="lazy"
+                src="./assets/ezgif.com-gif-maker (27).webp"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="loop__img">
+              <img loading="lazy"
+                src="./assets/ezgif.com-gif-maker (28).webp"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="loop_container2 loop_container">
+          <div class="loop2 loop">
+            <div class="loop__img">
+              <img loading="lazy"
+                src="./assets/ezgif.com-gif-maker (25).webp"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="loop__img">
+              <img loading="lazy"
+                src="./assets/ezgif.com-gif-maker (26).webp"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="loop__img">
+              <img loading="lazy"
+                src="./assets/ezgif.com-gif-maker (27).webp"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="loop__img">
+              <img loading="lazy"
+                src="./assets/ezgif.com-gif-maker (28).webp"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="loop__img">
+              <img loading="lazy"
+                src="./assets/ezgif.com-gif-maker (25).webp"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="loop__img">
+              <img loading="lazy"
+                src="./assets/ezgif.com-gif-maker (26).webp"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="loop__img">
+              <img loading="lazy"
+                src="./assets/ezgif.com-gif-maker (27).webp"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="loop__img">
+              <img loading="lazy"
+                src="./assets/ezgif.com-gif-maker (28).webp"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="loop__img">
+              <img loading="lazy"
+                src="./assets/ezgif.com-gif-maker (25).webp"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="loop__img">
+              <img loading="lazy"
+                src="./assets/ezgif.com-gif-maker (26).webp"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="loop__img">
+              <img loading="lazy"
+                src="./assets/ezgif.com-gif-maker (27).webp"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="loop__img">
+              <img loading="lazy"
+                src="./assets/ezgif.com-gif-maker (28).webp"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="loop__img">
+              <img loading="lazy"
+                src="./assets/ezgif.com-gif-maker (25).webp"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="loop__img">
+              <img loading="lazy"
+                src="./assets/ezgif.com-gif-maker (26).webp"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="loop__img">
+              <img loading="lazy"
+                src="./assets/ezgif.com-gif-maker (27).webp"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="loop__img">
+              <img loading="lazy"
+                src="./assets/ezgif.com-gif-maker (28).webp"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="real-estate bubble">
+          <div class="white_dot"></div>
+          <p>Real-Estate</p>
+        </div>
+        <div class="restaurant bubble">
+          <div class="white_dot"></div>
+          <p>Restaurant</p>
+        </div>
+        <div class="astrology bubble">
+          <div class="white_dot"></div>
+          <p>Astrology Business</p>
+        </div>
+        <div class="course bubble">
+          <div class="white_dot"></div>
+          <p>Course</p>
+        </div>
+        <div class="webinar bubble">
+          <div class="white_dot"></div>
+          <p>Webinar</p>
+        </div>
+        <div class="ecommerce bubble">
+          <div class="white_dot"></div>
+          <p>Ecommerce</p>
+        </div>
+      </div> -->
+      <div class="contact_section_form">
+        <form class="contact_form" id="contactForm">
+          <div class="form_div form_name_div">
+            <label for="name">Full Name</label>
+            <input required="" type="text" id="name" name="fullname" placeholder="John Doe">
+          </div>
+          <div class="form_div form_number_div">
+            <label for="number">Phone Number</label>
+            <input required="" type="tel" id="number" name="phoneNumber" placeholder="99xxxx7680">
+          </div>
+          <div class="form_div form_number_div">
+            <label for="email">Email</label>
+            <input required="" type="email" id="email" name="email" placeholder="johndoe@xyx.com">
+          </div>
+          <div class="form_div form_number_div">
+            <label for="mssg">Company Name</label>
+            <input type="text" id="mssg" placeholder="Enter your company name">
+          </div>
+          <div class="form_div form_number_div">
+            <label for="category">Type of Company</label>
+            <select value="" id="category">
+              <option value="Select an option" selected="" hidden="">
+                Select an Option
+              </option>
+              <option value="Edtech">Edtech</option>
+              <option value="E-Commerce">E-Commerce</option>
+              <option value="Real Estate">Real Estate</option>
+              <option value="Astrology">Astrology</option>
+              <option value="Lead Generation">Lead Generation</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="form_div form_number_div">
+            <label for="services">No of Products / Services</label>
+            <div id="services" style="
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+              ">
+              <div class="radio_input">
+                <label for="small">1-5</label>
+                <input type="radio" name="services" id="small" value="1-5">
+              </div>
+              <div class="radio_input">
+                <label for="medium">5-10</label>
+                <input type="radio" name="services" id="medium" value="5-10">
+              </div>
+              <div class="radio_input">
+                <label for="big">10-20</label>
+                <input type="radio" name="services" id="big" value="10-20">
+              </div>
+              <div class="radio_input">
+                <label for="large">20-50</label>
+                <input type="radio" name="services" id="large" value="20-50">
+              </div>
+              <div class="radio_input">
+                <label for="giant">50+</label>
+                <input type="radio" name="services" id="giant" value="50+">
+              </div>
+              <div class="radio_input">
+                <label for="none">none</label>
+                <input type="radio" name="services" id="none" value="none">
+              </div>
+            </div>
+          </div>
+          <button class="form_btn" type="submit">Next &gt;&gt;</button>
+        </form>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer_img_div">
+        <img src="./assets/logo- 1 (1).png" alt="" style="width: 100%; height: 100%; object-fit: contain">
+      </div>
+      <div class="quickLinksDiv">
+        <p>Quick Links</p>
+        <ul class="quickLinks">
+          <li>
+            <a href="./contact.html" style="text-decoration: none; color: #fff">Contact Us</a>
+          </li>
+          <li>
+            <a href="./about.html" style="text-decoration: none; color: #fff">About Us</a>
+          </li>
+          <li>
+            <a href="./privacy.html" style="text-decoration: none; color: #fff">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="./terms.html" style="text-decoration: none; color: #fff">Terms and Service</a>
+          </li>
+          <!-- <li>Myzer vs Others</li>
+          <li>Join Waitlist</li>
+          <li>Submit Suggestions</li> -->
+        </ul>
+      </div>
+      <!-- <div class="policiesDiv">
+        <p>Policies</p>
+        <ul class="policies">
+          <li>Privacy Policy</li>
+          <li>Terms and Conditions</li>
+          <li>Refund Policy</li>
+        </ul>
+      </div> -->
+    </footer>
+    <script src="./script.js"></script>
+  
+
+</body></html>
