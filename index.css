@@ -33,6 +33,11 @@ body {
 
   padding: 2px;
 }
+.mobileImg{
+  height: 311px;
+  width: 200px;
+  border: none;
+}
 @media screen and (max-width: 400px) {
 
   .logo{
@@ -320,192 +325,11 @@ button {
   font-family: 'Poppins';
   font-size: clamp(19px, 2vw, 24px);
 }
+/* -------------------------- */
 
+    
 
-
-
-
-
-
-
-
-
-
-.prebook_section {
-  position: relative;
-
-  /* background: url(./assets/image 2.png) center center / contain;
-  background-position: center center; */
-}
-
-.prebook_section_h1 {
-  font-family: Poppins;
-  font-size: clamp(29px, 3vw, 45px);
-  color: white;
-  width: 85%;
-  text-align: center;
-  font-weight: 500;
-  margin: 0px auto;
-}
-
-.prebook_section_img_container {
-  max-width: 2000px;
-  width: 100%;
-  position: relative;
-  margin: 0px auto !important;
-}
-.prebook_section_img_container__img {
-  border: none;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center top;
-  position: relative;
-  z-index: 4;
- 
-}
-img {
-  overflow-clip-margin: content-box;
-  overflow: clip;
-  border: 2px solid white;
-  border-radius: 12px;
-}
-.loop_container {
-  position: absolute;
-  z-index: -1;
-  display: flex;
-  width: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 30%;
-  overflow: hidden;
-}
-.loop_container::before {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  inset: 0px;
-  background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 90%, rgb(0, 0, 0));
-}
-.loop_container1 {
-  top: 5%;
-  justify-content: end;
-}
-
-.loop_container::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 10% 90%, rgba(0, 0, 0, 1));
-  z-index: 2;
-}
-.loop {
-  width: calc(2880px);
-  height: 100%;
-  opacity: 0.2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-@keyframes moveRight {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(100px);
-  }
-}
-@keyframes moveLeft {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100px);
-  }
-}
-
-.loop1 .loop__img {
-  width: 180px;
-  height: 100%;
-  animation: moveRight 3s linear 0s infinite normal none;
-  padding-inline: 1rem;
-  animation-direction: alternate;
-  position: relative;
-}
-
-.loop_container2 {
-  top: 40%;
-  justify-content: start;
-}
-.loop_container::before {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  inset: 0px;
-  background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 90%, rgb(0, 0, 0));
-}
-.loop2 .loop__img {
-  width: 180px;
-  height: 100%;
-  animation: moveLeft 3s linear 0s infinite normal none;
-  padding-inline: 1rem;
-  animation-direction: alternate;
- position: relative;
-}
-.real-estate {
-  top: 26%;
-  left: 27%;
-  z-index: 3;
-  box-shadow: rgb(0, 0, 0) 0px 27px 70px 0px;
-}
-.bubble {
-  color: white;
-  position: absolute;
-  font-family: Poppins;
-  font-size: clamp(12px, 1.5vw, 25px);
-  display: flex;
-  align-items: center;
-  background: linear-gradient(to right, rgb(var(--bg-gradient-pink)), rgb(var(--bg-gradient-orange)));
-  border-radius: 50px;
-  padding: 0.5rem 1rem 0.5rem 0.5rem;
-  gap: 0.5rem;
-}
-.restaurant {
-  top: 32%;
-  right: 32%;
-  z-index: 3;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 44px 40px 0px;
-}
-.white_dot {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: rgb(255, 255, 255);
-}
-.astrology {
-  top: 45%;
-  right: 20%;
-  z-index: 4;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 24px 60px 0px;
-}
-.course {
-  top: 50%;
-  left: 39%;
-  z-index: 4;
-  box-shadow: rgb(0, 0, 0) 0px 24px 60px 0px;
-}
-.webinar {
-  top: 57%;
-  right: 36%;
-  z-index: 4;
-  box-shadow: rgb(0, 0, 0) 0px 24px 60px 0px;
-}
-.ecommerce {
-  top: 66%;
-  left: 32%;
-  z-index: 3;
-  box-shadow: rgb(0, 0, 0) 0px 24px 60px 0px;
-}
+/* ----------------- */
 .creativity {
   width: 85%;
   top: 12px;
@@ -558,7 +382,7 @@ img {
 }
 .prebook_section__demo__container {
   width: 100%;
-  height: 382vh;
+  height: 382px;
 }
 
 .feature_section {
@@ -991,18 +815,7 @@ li {
   text-align: -webkit-match-parent;
   unicode-bidi: isolate;
 }
-@media screen and (max-width: 478px) {
-  .bubble {
-      padding: 0.1rem 0.5rem 0.1rem 0.2rem !important;
-      font-size: 8px !important;
-  }
-}
-@media screen and (max-width: 478px) {
-  .course {
-      top: 51% !important;
-      left: 36% !important;
-  }
-}
+
 @media screen and (max-width: 1025px) {
   .myzer-logo {
     width: 100px;
@@ -1173,56 +986,594 @@ li {
     /* height: 48px !important; */
   }
 }
-@media screen and (max-width: 568px) {
-  .real-estate {
-      top: 10% !important;
-      left: 30% !important;
-  }
 
+
+
+    
+@media screen and (max-width: 769px) {
+ 
+  .prebook {
+    height: 42px !important;
+    width: 250px !important;
+    font-size: 14px !important;
+  }
 }
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 430px) {
+ 
+  .prebook {
+    height: 42px !important;
+    width: 80% !important;
+    font-size: 11px !important;
+    padding-inline: 10px;
+  }
+ 
+}
+
+
+.prebook {
+  width: 80%;
+  max-width: 481px;
+  height: 91px;
+  border-radius: 26px;
+  background: linear-gradient(
+    45deg,
+    rgb(var(--bg-gradient-orange)),
+    rgb(var(--bg-gradient-pink))
+  );
+  border: none;
+  font-size: clamp(11px, 2vw, 21px);
+  font-family: 'Poppins';
+  color: white;
+  position: relative;
+  padding: 0.5rem 1.5rem;
+  background-size: 400% 400%;
+  animation: bgMove 4s infinite ease-in-out;
+}
+
+.prebook::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  z-index: -1;
+  border-radius: 26px;
+  margin: -4px;
+  filter: blur(100px);
+}
+@keyframes bgMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.prebook_section {
+  background: url('./assets/image\ 2.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: none;
+  position: relative;
+  margin-top: 10%;
+}
+.bubble {
+  color: white;
+  background: linear-gradient(
+    to right,
+    rgb(var(--bg-gradient-pink)),
+    rgb(var(--bg-gradient-orange))
+  );
+  position: absolute;
+  font-family: 'Poppins';
+  font-size: clamp(12px, 1.5vw, 25px);
+  border-radius: 50px;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+@media screen and (max-width: 1399px) {
+  .white_dot {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .real-estate {
+    top: 26% !important;
+    left: 27% !important;
+  }
   .restaurant {
-      top: 15% !important;
-      right: 28% !important;
+    top: 32% !important;
+    right: 33% !important;
   }
-  
-}
-@media screen and (max-width: 568px) {
   .astrology {
-      top: 19% !important;
-      right: 46% !important;
+    top: 45% !important;
+    right: 23% !important;
+  }
+  .course {
+    top: 51% !important;
+    left: 39% !important;
+  }
+  .webinar {
+    top: 60% !important;
+    right: 35% !important;
+  }
+  .ecommerce {
+    top: 66% !important;
+    left: 33% !important;
   }
 }
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 1100px) {
+  .white_dot {
+    width: 25px !important;
+    height: 25px !important;
+  }
+  .real-estate {
+    top: 25% !important;
+    left: 26% !important;
+  }
+  .restaurant {
+    top: 32% !important;
+    right: 32% !important;
+  }
+  .astrology {
+    top: 46% !important;
+    right: 21% !important;
+  }
   .course {
-      top: 23% !important;
-      left: 36% !important;
+    top: 51% !important;
+    left: 38% !important;
+  }
+  .webinar {
+    top: 60% !important;
+    right: 34% !important;
+  }
+  .ecommerce {
+    top: 66% !important;
+    left: 32% !important;
+  }
+}
+@media screen and (max-width: 900px) {
+  .white_dot {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .bubble {
+    padding: 0.3rem 0.7rem 0.3rem 0.3rem;
+  }
+  .real-estate {
+    top: 26% !important;
+    left: 26% !important;
+  }
+  .restaurant {
+    top: 32% !important;
+    right: 32% !important;
+  }
+  .astrology {
+    top: 46% !important;
+    right: 21% !important;
+  }
+  .course {
+    top: 51% !important;
+    left: 38% !important;
+  }
+  .webinar {
+    top: 60% !important;
+    right: 34% !important;
+  }
+  .ecommerce {
+    top: 66% !important;
+    left: 32% !important;
+  }
+}
+@media screen and (max-width: 789px) {
+  .white_dot {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .bubble {
+    padding: 0.3rem 0.7rem 0.3rem 0.3rem;
+  }
+  .real-estate {
+    top: 25% !important;
+    left: 24% !important;
+  }
+  .restaurant {
+    top: 32% !important;
+    right: 30% !important;
+  }
+  .astrology {
+    top: 46% !important;
+    right: 18% !important;
+  }
+  .course {
+    top: 51% !important;
+    left: 37% !important;
+  }
+  .webinar {
+    top: 60% !important;
+    right: 32% !important;
+  }
+  .ecommerce {
+    top: 66% !important;
+    left: 29% !important;
+  }
+}
+@media screen and (max-width: 706px) {
+  .white_dot {
+    width: 15px !important;
+    height: 15px !important;
+  }
+  .bubble {
+    padding: 0.3rem 0.6rem 0.3rem 0.3rem;
+  }
+  .real-estate {
+    top: 25% !important;
+    left: 22% !important;
+  }
+  .restaurant {
+    top: 31% !important;
+    right: 28% !important;
+  }
+  .astrology {
+    top: 46% !important;
+    right: 16% !important;
+  }
+  .course {
+    top: 51% !important;
+    left: 36% !important;
+  }
+  .webinar {
+    top: 62% !important;
+    right: 32% !important;
+  }
+  .ecommerce {
+    top: 66% !important;
+    left: 29% !important;
+  }
+}
+@media screen and (max-width: 635px) {
+  .white_dot {
+    width: 15px !important;
+    height: 15px !important;
+  }
+  .bubble {
+    padding: 0.3rem 0.6rem 0.3rem 0.3rem;
+  }
+  .real-estate {
+    top: 24% !important;
+    left: 22% !important;
+  }
+  .restaurant {
+    top: 31% !important;
+    right: 28% !important;
+  }
+  .astrology {
+    top: 46% !important;
+    right: 16% !important;
+  }
+  .course {
+    top: 51% !important;
+    left: 36% !important;
+  }
+  .webinar {
+    top: 62% !important;
+    right: 32% !important;
+  }
+  .ecommerce {
+    top: 66% !important;
+    left: 29% !important;
   }
 }
 @media screen and (max-width: 568px) {
   .white_dot {
-      width: 15px !important;
-      height: 15px !important;
+    width: 15px !important;
+    height: 15px !important;
   }
-}
-
-@media screen and (max-width: 568px) {
+  .bubble {
+    padding: 0.3rem 0.6rem 0.3rem 0.3rem !important;
+    font-size: 10px !important;
+  }
+  .real-estate {
+    top: 24% !important;
+    left: 22% !important;
+  }
+  .restaurant {
+    top: 31% !important;
+    right: 28% !important;
+  }
+  .astrology {
+    top: 46% !important;
+    right: 16% !important;
+  }
+  .course {
+    top: 51% !important;
+    left: 36% !important;
+  }
   .webinar {
-      top: 28% !important;
-      right: 30% !important;
+    top: 62% !important;
+    right: 30% !important;
   }
-}
-@media screen and (max-width: 568px) {
   .ecommerce {
-      top: 26% !important;
-      left: 28% !important;
+    top: 66% !important;
+    left: 28% !important;
   }
 }
-@media screen and (max-width: 568px) {
-  .creativity{
+@media screen and (max-width: 478px) {
+  .white_dot {
+    width: 10px !important;
+    height: 10px !important;
+  }
+  .bubble {
+    padding: 0.1rem 0.5rem 0.1rem 0.2rem !important;
+    font-size: 8px !important;
+  }
+  .real-estate {
+    top: 26% !important;
+    left: 23% !important;
+  }
+  .restaurant {
+    top: 31% !important;
+    right: 29% !important;
+  }
+  .astrology {
+    top: 46% !important;
+    right: 18% !important;
+  }
+  .course {
+    top: 51% !important;
+    left: 36% !important;
+  }
+  .webinar {
+    top: 62% !important;
+    right: 31% !important;
+  }
+  .ecommerce {
+    top: 66% !important;
+    left: 29% !important;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .bubble {
+    padding: 1rem 2rem 1rem 1rem;
+  }
+  .real-estate {
+    top: 25% !important;
+    left: 27% !important;
+  }
+  .restaurant {
+    top: 31% !important;
+    right: 31% !important;
+  }
+  .astrology {
+    top: 45% !important;
+    right: 20% !important;
+  }
+  .course {
+    top: 50% !important;
+    left: 38% !important;
+  }
+  .webinar {
+    top: 60% !important;
+    right: 34% !important;
+  }
+  .ecommerce {
+    top: 66% !important;
+    left: 31% !important;
+  }
+}
+@media screen and (min-width: 2024px) {
+  .bubble {
+    padding: 1rem 2rem 1rem 1rem;
+  }
+  .real-estate {
+    top: 26% !important;
+    left: 28% !important;
+  }
+  .restaurant {
+    top: 33% !important;
+    right: 33% !important;
+  }
+  .astrology {
+    top: 45% !important;
+    right: 25% !important;
+  }
+  .course {
+    top: 50% !important;
+    left: 40% !important;
+  }
+  .webinar {
+    top: 59% !important;
+    right: 36% !important;
+  }
+  .ecommerce {
+    top: 66% !important;
+    left: 34% !important;
+  }
+}
+.white_dot {
+  border-radius: 50%;
+  background: #fff;
+  width: 40px;
+  height: 40px;
+}
+.real-estate {
+  top: 26%;
+  left: 27%;
+  z-index: 3;
+  box-shadow: 0 27px 70px 0 rgba(0, 0, 0, 1);
+}
+.restaurant {
+  top: 32%;
+  right: 32%;
+  z-index: 3;
+  box-shadow: 0 44px 40px 0 rgba(0, 0, 0, 0.5);
+}
+.astrology {
+  top: 45%;
+  right: 20%;
+  z-index: 4;
+  box-shadow: 0 24px 60px 0 rgba(0, 0, 0, 0.5);
+}
+.course {
+  top: 50%;
+  left: 39%;
+  z-index: 4;
 
+  box-shadow: 0 24px 60px 0 rgba(0, 0, 0, 1);
+}
+.webinar {
+  top: 57%;
+  right: 36%;
+  z-index: 4;
+
+  box-shadow: 0 24px 60px 0 rgba(0, 0, 0, 1);
+}
+.ecommerce {
+  top: 66%;
+  left: 32%;
+  z-index: 3;
+  box-shadow: 0 24px 60px 0 rgba(0, 0, 0, 1);
+}
+.prebook_section_img_container {
+  max-width: 2000px;
+  width: 100%;
+  margin: 0 auto !important;
+  position: relative;
+}
+.loop_container {
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 30%;
+}
+
+.loop_container1 {
+  top: 5%;
+  justify-content: end;
+}
+.loop_container2 {
+  top: 40%;
+  justify-content: start;
+}
+.loop_container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0) 10% 90%,
+    rgba(0, 0, 0, 1)
+  );
+  z-index: 2;
+}
+.loop {
+  width: calc(180px * 16);
+  height: 100%;
+  opacity: 0.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loop1 .loop__img {
+  width: 180px;
+  height: 100%;
+  padding-inline: 1rem;
+  animation: moveRight 5s linear infinite;
+}
+.loop2 .loop__img {
+  width: 180px;
+  height: 100%;
+
+  padding-inline: 1rem;
+  animation: moveLeft 5s linear infinite;
+}
+@keyframes moveRight {
+  to {
+    transform: translateX(calc(180px * 4));
   }
 }
+@keyframes moveLeft {
+  to {
+    transform: translateX(calc(-180px * 4));
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .loop {
+    width: calc(120px * 16) !important;
+  }
+  .loop1 .loop__img {
+    width: 120px !important;
+  }
+  .loop2 .loop__img {
+    width: 120px !important;
+  }
+  .loop_container1 {
+    top: 5%;
+  }
+  .loop_container2 {
+    top: 45%;
+  }
+  @keyframes moveRight {
+    to {
+      transform: translateX(calc(120px * 4));
+    }
+  }
+  @keyframes moveLeft {
+    to {
+      transform: translateX(calc(-120px * 4));
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .loop {
+    width: calc(100px * 16) !important;
+  }
+  .loop1 .loop__img {
+    width: 100px !important;
+  }
+  .loop2 .loop__img {
+    width: 100px !important;
+  }
+  .loop_container1 {
+    top: 5%;
+  }
+  .loop_container2 {
+    top: 45%;
+  }
+  @keyframes moveRight {
+    to {
+      transform: translateX(calc(100px * 4));
+    }
+  }
+  @keyframes moveLeft {
+    to {
+      transform: translateX(calc(-100px * 4));
+    }
+  }
+}
+.prebook_section_img_container__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: top;
+  position: relative;
+  z-index: 4;
+}
+
+
+
+
 @media screen and (max-width: 1025px) {
   .creativity {
       padding: 50px 75px;
@@ -1241,24 +1592,9 @@ li {
    
   }
 }
-@media screen and (max-width: 769px) {
-  .loop_container1 {
-      top: 5%;
-      height: 15%;
-  }
-}
-@media screen and (max-width: 769px) {
-  .loop_container2 {
-      top: 23%;
-      height: 15%;
-  }
-}
-@media screen and (max-width: 568px) {
-  .bubble {
-      padding: 0.3rem 0.6rem 0.3rem 0.3rem !important;
-      font-size: 10px !important;
-  }
-}
+
+
+
 .copyright{
   /* border: 2px solid red; */
   padding-left: 12px;
