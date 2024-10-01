@@ -2084,6 +2084,10 @@
       font-size: 14px;
       margin: 0 auto;
     }
+    .header__navbar__links{
+      font-size: 12px;
+      width: 258px;
+    }
   }
   @media screen and (max-width: 769px) {
     .feature__para {
