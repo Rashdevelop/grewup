@@ -1986,16 +1986,7 @@
     .feature_section {
       padding-top: 100px;
     }
-    .feature__card-wrap{
-      display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    width: 100%;
-    margin: 0 auto;
-    gap: 4rem;
-    flex-wrap: wrap;
-    }
+   
     .card_img{
       height: 50%;
       width: 50%;
@@ -2045,7 +2036,7 @@
   }
   @media screen and (max-width: 769px) {
     .feature__card-wrap {
-      flex-direction: column !important;
+      /* flex-direction: column !important; */
       gap: 4rem;
       height: auto;
     }
@@ -2064,7 +2055,11 @@
     .feature__heading {
       font-size: 18px;
     }
-  
+  .feature__card-wrap{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
   }
   @media screen and (max-width: 769px) {
     .feature__heading {
@@ -2087,6 +2082,16 @@
     .header__navbar__links{
       font-size: 12px;
       width: 258px;
+      display: none;
+    }
+    
+    .creativity__img__container{
+      display: flex;
+      justify-content: center;
+    }
+    .creativity__img{
+      height: 70%;
+      width: 70%;
     }
   }
   @media screen and (max-width: 769px) {
@@ -2149,7 +2154,7 @@
   }
   @media screen and (max-width: 430px) {
     .feature__card-text h2 {
-      font-size: 27px;
+      font-size: 16px;
     }
     .feature__card-text p {
       font-size: 14px;
@@ -2160,7 +2165,14 @@
     }
     .feature__card {
       padding: 15px 15px 25px 15px;
-      width: 290px;
+      width: 183px;
+      height: 364px;
+    }
+    .payment_section__logos{
+      border: 2px solid red;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
   }
   
@@ -3148,8 +3160,8 @@
   .payment_section__logos {
     width: 100%;
     max-width: 1500px;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(33%, 1fr));
+    /* display: grid;
+    grid-template-columns: repeat(3, minmax(33%, 1fr)); */
     margin: 1 auto;
     font-family: 'Poppins';
     color: white;
@@ -3208,7 +3220,7 @@
   }
   @media screen and (max-width: 786px) {
     .payment_section__logos {
-      grid-template-columns: 1fr;
+      /* grid-template-columns: 1fr; */
       margin: 50px auto 0;
     }
     .payment_section__mac_div {
@@ -3254,6 +3266,14 @@
       display: block !important;
       height: 736px;
       width: 100%;
+    }
+    .payment_section__logo{
+      height: 200px;
+      width: 160px;
+    }
+    .clientImg{
+      height: 200px;
+      width: 150px;
     }
   }
   /* payement section end */
