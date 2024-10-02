@@ -413,6 +413,7 @@
     .work-section video{
       height: 250px;
       width: 300px;
+      outline: none;
     }
   }
   .header__hero__masthead__h1 {
@@ -1579,6 +1580,24 @@
       width: 80% !important;
       height: 100% !important;
     }
+    .feature__card{
+      height: 400px;
+      width: 40%;
+    }
+    .card_img{
+            height: 150px;
+            width: 150px;
+    }
+    .feature__card-text h2{
+      font-size: 35px;
+    }
+    .feature__card-text p{
+      font-size: 24px;
+    }
+    /* .payment_section__logo{
+      width: 400px;
+      height: 400px;
+    } */
   }
   @media screen and (max-width: 620px) {
     .creativity {
@@ -2035,8 +2054,13 @@
     
   }
   @media screen and (max-width: 769px) {
+    .feature__card{
+      height: 387px;
+      width: 300px;
+    }
     .feature__card-wrap {
-      /* flex-direction: column !important; */
+       flex-direction: row !important; 
+       display: flex;
       gap: 4rem;
       height: auto;
     }
@@ -2065,6 +2089,23 @@
     .feature__heading {
       padding-bottom: 25px;
     }
+   
+      .work-section{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        
+      }
+      .work-section p{
+        font-size: 30px;
+        text-align: center;
+      }
+      .work-section video{
+        height: 300px;
+        width: 400px;
+        outline: none;
+      }
+    
   }
   .feature__para {
     color: white;
@@ -2098,6 +2139,10 @@
     .feature__para {
       padding-bottom: 50px;
     }
+    .clientImg{
+       height: 200px;
+       width: 270px;
+    }
   }
   .orange_para_text {
     color: #ff6b20;
@@ -2113,6 +2158,7 @@
     border-radius: 20px;
     gap: 1rem;
     height: 100%;
+    width: 40%;
     position: relative;
   }
   .feature__card::before {
@@ -3167,27 +3213,34 @@
     color: white;
     margin-top: 10rem;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
   }
 
     .payment_section__logo {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
       gap: 4rem;
+      flex-wrap: wrap;
       padding-block: 3rem;
+      justify-content: center;
       background: linear-gradient(to bottom, rgb(var(--bg-gradient-orange)), transparent 80%);
       background-position: top;
       background-repeat: no-repeat;
       border-radius: 20px;
       position: relative;
       height: 400px;
-      width: 300px;
+      width: 39vw;
   }
   .clientImg {
-    height: 200px;
-    width: 280px;
+    height: 100%;
+    width: 100%;
     border: none;
+   
 }
   .payment_section__logo::before {
     content: '';
@@ -3222,6 +3275,15 @@
     .payment_section__logos {
       /* grid-template-columns: 1fr; */
       margin: 50px auto 0;
+      border: 2px solid red;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .payment_section__logo{
+      height: 300px;
+      width: 295px;
     }
     .payment_section__mac_div {
       display: none;
@@ -3381,9 +3443,12 @@
   }
   .templates_cards {
     margin: 103px auto 0;
-    width: 80%;
+    width: 100%;
     max-width: 1775px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
   .templates_cards__h2 {
     font-family: 'Poppins';
