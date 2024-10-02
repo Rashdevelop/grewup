@@ -2,20 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- Example for the homepage -->
-  <url>
+ <url>
     <loc>https://grewup.online/</loc>
-    <lastmod>2024-09-26</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2024-10-02</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Example for a blog page -->
-  <!-- <url>
-    <loc>https://yourwebsite.com/blog</loc>
-    <lastmod>2024-09-20</lastmod>
+  <url>
+    <loc>https://grewup.online/blog</loc>
+    <lastmod>2024-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url> -->
+  </url>
 
   <!-- Example for an individual post -->
   <!-- <url>
