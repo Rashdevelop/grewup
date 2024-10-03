@@ -149,7 +149,7 @@
     padding: 12px;
     border:2px solid #0085ff;
     border-radius: 12px;
-    margin: 60px;
+    margin: 30px;
     
   }
   .work-section p{
@@ -408,7 +408,7 @@
       
     }
     .work-section p{
-      font-size: 20px;
+      font-size: 15px;
       text-align: center;
     }
     .work-section video{
@@ -3333,10 +3333,10 @@
     }
     .payment_section__logo{
       height: 200px;
-      width: 160px;
+      width: 150px;
     }
     .clientImg{
-      height: 274px;
+      height: 150px;
       width: 150px;
     }
   }
