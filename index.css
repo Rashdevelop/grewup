@@ -149,6 +149,7 @@
     padding: 12px;
     border:2px solid #0085ff;
     border-radius: 12px;
+    margin: 60px;
     
   }
   .work-section p{
@@ -411,7 +412,7 @@
       text-align: center;
     }
     .work-section video{
-      height: 250px;
+      height: 200px;
       width: 300px;
       outline: none;
     }
@@ -447,6 +448,7 @@
       height: 15.9px; */
       bottom: -15%;
     }
+    
   }
   .heading__1 {
     background: linear-gradient(to right, #8721c6, #ff6b20);
@@ -2085,7 +2087,7 @@
     gap: 15px;
   }
   }
-  @media screen and (max-width: 769px) {
+  @media screen and (min-width: 431px) and (max-width: 769px) {
     .feature__heading {
       padding-bottom: 25px;
     }
@@ -2135,7 +2137,7 @@
       width: 70%;
     }
   }
-  @media screen and (max-width: 769px) {
+  @media screen and  (min-width:431) and (max-width: 769px) {
     .feature__para {
       padding-bottom: 50px;
     }
@@ -2200,19 +2202,19 @@
   }
   @media screen and (max-width: 430px) {
     .feature__card-text h2 {
-      font-size: 16px;
+      font-size: 12px;
     }
     .feature__card-text p {
-      font-size: 14px;
+      font-size: 10px;
     }
     .card_img {
-      height: 100px;
+      height: 60px;
       width: 100px;
     }
     .feature__card {
       padding: 15px 15px 25px 15px;
-      width: 183px;
-      height: 364px;
+      width: 135px;
+      height: 300px;
     }
     .payment_section__logos{
      
@@ -3271,7 +3273,7 @@
   .stripe {
     width: 20%;
   }
-  @media screen and (max-width: 786px) {
+  @media screen and (min-width:431)and(max-width: 786px) {
     .payment_section__logos {
       /* grid-template-columns: 1fr; */
       margin: 50px auto 0;
@@ -3334,7 +3336,7 @@
       width: 160px;
     }
     .clientImg{
-      height: 200px;
+      height: 274px;
       width: 150px;
     }
   }
