@@ -132,7 +132,7 @@
     font-family: 'Poppins';
     /* position: fixed; */
     backdrop-filter: blur(5px);
-    padding-inline: 2rem;
+    /* padding-inline: 2rem; */
     /* margin: 0 auto; */
     /* left: 50%;
     transform: translateX(-50%); */
@@ -199,12 +199,16 @@
   }
   @media screen and (max-width: 769px) {
     .header__navbar__buttons {
-      display: none;
+      width: 112px;
     }
+    /* .header__navbar__buttons a{
+      margin: 12px 12px;
+    } */
+
   }
   .header__navbar__button {
-    height: 100%;
-    width: 40%;
+    height: 80%;
+    width: 60%;
     border-radius: 6px;
     border: none;
     color: white;
@@ -264,7 +268,7 @@
     width: 15%;
     max-width: 200px;
     height: 71px;
-    padding-top: 20px;
+    /* padding-top: 20px; */
   }
 
   .mobile__links {
@@ -373,6 +377,7 @@
     object-fit: contain;
     height: 100%;
     width: 100%;
+   text-align: center;
   }
   .header__hero {
     width: 100%;
